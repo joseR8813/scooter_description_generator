@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description Generator</title>
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="forms.css">
+
+</head>
+<body>
+<h1>Scooter Description Generator</h1>
+
+<h2>Main Categories</h2>
+<button class="category-btn">New</button>
+<button class="category-btn">Used</button>
+<button class="category-btn">motorcycle</button>
+<button class="category-btn">Fuel engine scooter</button>
+<button class="category-btn">Electric scooters</button>
+<button class="category-btn">Compact E-rides</button>
+<button class="category-btn">Mobility scooters</button>
+<button class="category-btn">Two wheelers</button>
+
+<h2>Sub Categories</h2>
+<button class="sub-category-btn">Commuter</button>
+<button class="sub-category-btn">Sport</button>
+<button class="sub-category-btn">Commuter electric scooters</button>
+<button class="sub-category-btn">E-bikes</button>
+<button class="sub-category-btn">Kick scooters</button>
+<button class="sub-category-btn">Commuter fuel scooters</button>
+<button class="sub-category-btn">Performance fuel scooters</button>
+<button class="sub-category-btn">Classic fuel scooters</button>
+<button class="sub-category-btn">Economy fuel scooters</button>
+<button class="sub-category-btn">4-Wheel scooters</button>
+
+<h2>Tags</h2>
+<button class="tag-btn">Commuter</button>
+<button class="tag-btn">Compact</button>
+<button class="tag-btn">Long range</button>
+<button class="tag-btn">Eco-friendly</button>
+<button class="tag-btn">economical</button>
+<button class="tag-btn">Sporty</button>
+<button class="tag-btn">Usb charger</button>
+
+<h2>Attributes</h2>
+<div class="form-container">
+    <div class="form-row">
+        <div class="input-item">
+            <label for="year">Year:</label>
+            <input type="text" id="year" class="text-input" placeholder="YYYY">
+        </div>
+        <div class="input-item">
+            <label for="manufacturer">Manufacturer:</label>
+            <input type="text" id="manufacturer" class="text-input" placeholder="Enter manufacturer">
+        </div>
+        <div class="input-item">
+            <label for="model">Model Number:</label>
+            <input type="text" id="model" class="text-input" placeholder="Enter model number">
+        </div>
+        <div class="input-item">
+            <label for="color">Color:</label>
+            <input type="text" id="color" class="text-input" placeholder="Enter color">
+        </div>
+        <div class="input-item">
+            <label for="condition">Condition:</label>
+            <select id="condition" class="text-input">
+                <option value="fair">Fair</option>
+                <option value="good">Good</option>
+                <option value="excellent">Excellent</option>
+            </select>
+        </div>
+        <div class="input-item">
+            <label for="engine-type">Engine Type:</label>
+            <select id="engine-type" class="text-input">
+                <option value="diesel">Gasoline</option>
+                <option value="electric">Electric</option>
+            </select>
+        </div>
+        <div class="input-item">
+            <label for="tank-capacity">Tank capacity:</label>
+            <input type="text" id="tank-capacity" class="text-input" placeholder="Enter tank capacity">
+        </div>
+        <div class="input-item">
+            <label for="fuel-consumption">Fuel consumption (L/100Km):</label>
+            <input type="text" id="fuel-consumption" class="text-input" placeholder="Enter L/100Km">
+        </div>
+        <div class="input-item">
+            <label for="top-speed">Top speed (Km/hr):</label>
+            <input type="text" id="top-speed" class="text-input" placeholder="Enter Km/hr">
+        </div>
+    <div class="input-item">
+        <label for="maintenance">Maintenance requirements:</label>
+        <select id="maintenance" class="text-input">
+            <option value="low">Low</option>
+            <option value="Normal">Normal</option>
+        </select>
+    </div>
+    <div class="input-item">
+        <label for="mileage">Mileage (Km):</label>
+        <input type="text" id="mileage" class="text-input" placeholder="Enter Km">
+    </div>
+    <div class="input-item">
+        <label for="battery-type">Battery type:</label>
+        <select id="battery-type" class="text-input">
+            <option value="one">One</option>
+            <option value="two">two</option>
+            <option value="three">Three</option>
+        </select>
+    </div>
+    <div class="input-item">
+        <label for="battery-capacity">Baterry capacity (Kwh):</label>
+        <input type="text" id="battery-capacity" class="text-input" placeholder="Enter Kwh">
+    </div>
+    <div class="input-item">
+        <label for="charging-time">Charging time (hrs):</label>
+        <input type="text" id="charging-time" class="text-input" placeholder="Enter charging time in hrs">
+    </div>
+    <div class="input-item">
+        <label for="range">Range (Km):</label>
+        <input type="text" id="range" class="text-input" placeholder="Enter Km">
+    </div>
+    <div class="input-item">
+        <label for="min-battery-number">Minimum batteries:</label>
+        <input type="text" id="min-battery-number" class="text-input" placeholder="Enter min # of batteries">
+    </div>
+    <div class="input-item">
+        <label for="max-battery-number">Maximum batteries:</label>
+        <input type="text" id="max-battery-number" class="text-input" placeholder="Enter max # of batteries">
+    </div>
+</div>
+
+<button id="generate-button" onclick="collectAndSortData()">Generate</button>
+
+<script src="script.js"></script>
+</body>
+</html>
